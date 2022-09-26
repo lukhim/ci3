@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Latihan1</title>
 </head>
@@ -11,4 +10,4 @@
 
 </body>
 </html>
-<html>
+
