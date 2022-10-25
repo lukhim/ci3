@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class ModelUser extends CI_Model
 {
-    public finction simpanData($data = null)
+    public function simpanData($data = null)
     {
         $this->db->insert('user', $data);
     }
@@ -20,13 +20,13 @@ class ModelUser extends CI_Model
         $this->db->select('*');
         $this->db->from('access_menu');
         $this->db->where($where);
-        return $this->db->get()
+        return $this->db->get();
     }
-    public finction getUserLimit()
+    public function getUserLimit()
     {
         $this->db->select('*');
         $this->db->from('user');
         $this->db->limit(10, 0);
-        return $this->db->get()
+        return $this->db->get();
     }
 }
