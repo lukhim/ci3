@@ -40,7 +40,7 @@ class ModelBuku extends CI_Model
     //menejemen kategori
     public function getKategori()
     {
-        return $this->->get('ketgori');
+        return $this->db->get('ketgori');
     }
 
     public function ketgoriWhere($where)
@@ -62,7 +62,7 @@ class ModelBuku extends CI_Model
     {
         $this->db->select('buku.id_kategori, ketegori.kategori');
         $this->db->from('buku');
-        $this->->join('kategoru', 'kategori.id', 'buku.id_kategori');
+        $this->db->join('kategoru', 'kategori.id buku.id_kategori');
         $this->db->where($where);
         return $this->db->get();
     }
